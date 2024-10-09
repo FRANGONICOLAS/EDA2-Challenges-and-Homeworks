@@ -1,10 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import GifExpertApp from './ComponentApp'
+import { GifGrid } from './Components/GifGrid'
+import { GifItem } from './Components/GiftItem'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <GifExpertApp />
+    <GifGrid />
+    <GifItem />
   </StrictMode>,
 )
