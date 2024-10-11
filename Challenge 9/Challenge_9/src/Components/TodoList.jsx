@@ -1,6 +1,6 @@
-import { TodoItem } from './TodoItem.jsx';
+import TodoItem from './TodoItem.jsx';
 
-export const TodoList = ({ todos = [] }) => {
+const TodoList = ({ todos = [] }) => {
   return (
     <ul className='list-group'>
       {
@@ -13,3 +13,5 @@ export const TodoList = ({ todos = [] }) => {
     </ul>
   );
 };
+
+export default TodoList

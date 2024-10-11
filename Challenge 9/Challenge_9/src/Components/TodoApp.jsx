@@ -1,9 +1,7 @@
-import { React } from 'react';
 import { useReducer } from 'react';
 import { TodoReducer } from './TodoReducer';
 
 import TodoList from './TodoList'; // Importa el componente TodoList
-import TodoItem from './TodoItem'; // Importa el componente TodoItem
 import TodoAdd from './TodoAdd'; // Importa el componente TodoAdd
 
 const initialState = [{
@@ -22,13 +20,13 @@ export const TodoApp = () => {
 
       <div className="row">
         <div className="col-7">
-          <TodoList todos={todos} /> // Pasa el estado de los todos al componente TodoList
+          <TodoList todos={todos} /> 
         </div>
 
         <div className="col-5">
           <h4> Agregar TODO </h4>
           <hr />
-          <TodoAdd onNewTodo={dispatchTodo} /> // Pasa la función dispatchTodo al componente TodoAdd
+          <TodoAdd onNewTodo={dispatchTodo} />
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-export const TodoAdd = ({ onNewTodo }) => {
+const TodoAdd = ({ onNewTodo }) => {
     const onFormSubmit = (event) => {
       event.preventDefault();
   
@@ -26,4 +26,5 @@ export const TodoAdd = ({ onNewTodo }) => {
         </button>
       </form>
     );
-  };
+};
+export default TodoAdd
