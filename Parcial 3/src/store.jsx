@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
-import todoReducer from './todoSlice';
-import pokemonReducer from './pokemonSlice';
-import appReducer from './appSlice';
+import todoReducer from './Redux/todoSlice';
+import pokemonReducer from './Redux/pokemonSlice';
+import appReducer from './Redux/appSlice';
 
 const store = configureStore({
   reducer: {

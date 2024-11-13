@@ -4,7 +4,8 @@ const useCounter = (initialState = 1) => {
   const [counter, setCounter] = useState(initialState);
 
   const increment = () => {
-    setCounter(counter + 1);
+    setCounter(prevCounter => prevCounter + 1); // Usamos la función de actualización
+    console.log(counter);
   };
 
   return {

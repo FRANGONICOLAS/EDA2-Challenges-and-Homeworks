@@ -4,8 +4,11 @@ import { fetchPokemonStart, fetchPokemonSuccess, fetchPokemonFailure } from '../
 import { useCounter } from '../../Hooks/Pokemon/useCounter';
 import '../../assets/PokemonApp.css';
 
+
+
 const PokemonApp = () => {
-  const { count: counter, increment } = useCounter(1);
+  const { counter, increment } = useCounter(1);
+  
   const dispatch = useDispatch();
   const { data, isLoading, hasError } = useSelector(state => state.pokemon);
 
@@ -14,6 +17,7 @@ const PokemonApp = () => {
       dispatch(fetchPokemonStart());
       try {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${counter}`);
+        console.log(counter);
         const data = await response.json();
         dispatch(fetchPokemonSuccess(data));
       } catch (error) {
@@ -39,8 +43,10 @@ const PokemonApp = () => {
       )}
       {hasError && <div className="alert alert-danger">{hasError}</div>}
       <button className="btn btn-primary" onClick={increment}>Next Pokemon</button>
+      
     </div>
   );
 };
+
 
 export default PokemonApp;
