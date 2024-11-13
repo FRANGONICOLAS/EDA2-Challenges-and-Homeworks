@@ -1,0 +1,59 @@
+/* PokemonApp.css */
+
+  
+  .pokemon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .alert {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .alert-info {
+    background-color: #e0f7fa;
+    color: #00796b;
+  }
+  
+  .alert-danger {
+    background-color: #ffebee;
+    color: #d32f2f;
+  }
+  
+  .pokemon-info h2 {
+    color: #555;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  .pokemon-info img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
